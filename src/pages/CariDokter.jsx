@@ -34,7 +34,7 @@ const CariDokter = () => {
                 <h3>dr. Andi Kusuma</h3>
                 <p>Dermatologi</p>
                 <p>Spesialis Estetika</p>
-                <p className="jadwal-title">Jadwal Praktek</p>
+                <h3 className="jadwal-title">Jadwal Praktek</h3>
                 <ul>
                   <li>Senin: 08.00 - 12.00</li>
                   <li>Rabu: 10.00 - 14.00</li>
