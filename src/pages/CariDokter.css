@@ -1,0 +1,166 @@
+/* Umum */
+.cari-dokter {
+  /* background-color: #e0f2fe; */
+  background-color: #ECF0F3;
+  color: #059055;
+  padding-bottom: 60px;
+}
+
+/* Section 1: Judul */
+.header-section {
+  text-align: left;
+  padding: 60px 20px 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.header-section p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0;
+}
+
+/* Section 2: Daftar Dokter */
+.dokter-section {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.dokter-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.dokter-card {
+  background: transparent;
+  display: flex;
+  align-items: stretch; /* Biar gambar ikut tinggi card */
+  gap: 20px;
+  padding: 10px;
+}
+
+.dokter-image {
+  flex: 1;
+  max-width: 160px;
+  height: 100%; /* Tambahan ini */
+  overflow: hidden;
+}
+
+.dokter-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.dokter-info {
+  flex: 2;
+}
+
+.dokter-info h3 {
+  margin: 0 0 5px;
+  font-size: 1.2rem;
+}
+
+.dokter-info p {
+  margin: 3px 0;
+  font-size: 0.95rem;
+}
+
+.jadwal-title {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.dokter-info ul {
+  margin: 5px 0 0 15px;
+  padding: 0;
+  font-size: 0.9rem;
+  list-style: disc;
+}
+.btn-janji {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #059055;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease;
+}
+
+.btn-janji:hover {
+  background-color: #163f77;
+}
+
+
+/* Section 3: Cari berdasarkan Poli */
+
+.poli-section {
+  text-align: left;
+  padding: 60px 20px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.poli-section h2 {
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.poli-grid {
+  display: flex;
+  justify-content: flex-start;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.poli-col {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.poli-col a {
+  color: #059055;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.poli-col a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dokter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dokter-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .dokter-image {
+    max-width: 100px;
+  }
+
+  .poli-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

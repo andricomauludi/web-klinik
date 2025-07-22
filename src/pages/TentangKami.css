@@ -1,0 +1,146 @@
+.tentang-wrapper {
+  background-color: #ECF0F3;
+  color: #059055;
+}
+
+/* Section: Two-column layout */
+.tentang-section, .visi-section {
+  padding: 60px 20px;
+}
+
+.tentang-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.text-col {
+  flex: 1;
+  min-width: 300px;
+}
+
+.text-col h1, .text-col h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.text-col p, .text-col ul {
+  font-size: 1rem;
+}
+
+.text-col ul {
+  padding-left: 20px;
+}
+
+.img-col {
+  flex: 1;
+}
+
+.img-col img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Section: Alamat & Maps */
+.alamat-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.maps-container {
+  margin-top: 30px;
+  height: 400px;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Section: Legalitas */
+.legalitas-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.legalitas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 40px auto 0;
+}
+
+.legalitas-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.legalitas-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+  position: relative;
+  text-align: center;
+}
+
+.card-content .hidden {
+  display: none;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.legalitas-card:hover .card-content h3 {
+  transform: translateY(-10px);
+}
+
+.legalitas-card:hover .card-content .hidden {
+  display: block;
+}
+
+.card-content h3 {
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tentang-row {
+    flex-direction: column;
+  }
+
+  .legalitas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .maps-container {
+    height: 300px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .legalitas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,45 @@
+.navbar {
+  background-color: #ACFFC4;
+  padding: 15px 30px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+
+  position: fixed;         /* 🔹 fix navbar di atas */
+  top: 0;                  /* 🔹 posisinya di atas layar */
+  left: 0;
+  right: 0;
+  z-index: 999;            /* 🔹 agar tidak ketimpa konten lain */
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar-logo a {
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+}
+
+.navbar-links a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #000000;
+}
