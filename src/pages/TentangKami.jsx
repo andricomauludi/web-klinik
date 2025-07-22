@@ -1,4 +1,4 @@
-import './tentangkami.css';
+import './TentangKami.css';
 import Footer from '../components/Footer';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import placeholder from './images/placeholder.png';
